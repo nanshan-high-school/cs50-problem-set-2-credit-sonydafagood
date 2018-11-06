@@ -38,9 +38,9 @@ int main() {
     O=o,
     P=(p*2>=10)?p*2-9:p*2;
     
-    if (b == 4 || 10-(B+C+D+E+F+G+H+I+K+L+M+N+O+P)%10==q )
+    if (b == 4 && 10-(B+C+D+E+F+G+H+I+K+L+M+N+O+P)%10==q )
         cout<<"這張卡合法"<<endl<<"這張卡是visa卡";
-    else if (c > 50 || c < 56 || 10-(B+C+D+E+F+G+H+I+K+L+M+N+O+P)%10==q )
+    else if (c+a*10 > 50 && c+a*10 < 56 && 10-(B+C+D+E+F+G+H+I+K+L+M+N+O+P)%10==q )
         cout<<"這張卡合法"<<endl<<"這張卡是master卡";
     else 
         cout<<"這是廢物";
