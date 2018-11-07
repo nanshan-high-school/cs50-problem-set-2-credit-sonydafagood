@@ -37,12 +37,14 @@ int main() {
     N=(n*2>=10)?n*2-9:n*2,
     O=o,
     P=(p*2>=10)?p*2-9:p*2;
-    
-    if (b == 4 && 10-(B+C+D+E+F+G+H+I+K+L+M+N+O+P)%10==q )
+    if (10-(B+C+D+E+F+G+H+I+J+K+L+M+N+O+P)%10==q){
+    if (b == 4 )
         cout<<"這張卡合法"<<endl<<"這張卡是visa卡";
-    else if (c+a*10 > 50 && c+a*10 < 56 && 10-(B+C+D+E+F+G+H+I+K+L+M+N+O+P)%10==q )
+    else if (c+b*10 > 50 || c+b*10 < 56  )
         cout<<"這張卡合法"<<endl<<"這張卡是master卡";
+    }
     else 
         cout<<"這是廢物";
         return 0;
 }
+
