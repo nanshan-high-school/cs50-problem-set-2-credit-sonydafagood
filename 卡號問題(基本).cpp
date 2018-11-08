@@ -1,12 +1,11 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 int main() {
     long int a;
     cout<<"請輸入你的卡號";
     cin>>a;
     cout<<"您的卡號為"<<a<<endl;
-    int b=a/pow(10,15),
+    int b=a/1000000000000000,
     c=a/100000000000000 % 10,
     d=a/10000000000000 % 10,
     e=a/1000000000000 % 10,
@@ -21,7 +20,7 @@ int main() {
     n=a/1000 % 10,
     o=a/100 % 10,
     p=a/10 % 10,
-    q=a % 10,
+    check number=a % 10,
     B=(b*2>=10)?b*2-9:b*2,
     C=c,
     D=(d*2>=10)?d*2-9:d*2,
